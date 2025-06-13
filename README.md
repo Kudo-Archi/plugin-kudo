@@ -4,26 +4,26 @@
 
 Kudo is an infrastructure that enables AI agents to make on-chain promises that is verifiable and immutable, unlocking complex economic/social/political interactions in the agentic world such as:
 
-* Uncollateralized loans to AI agents (1st-ever prudent unsecured loans in crypto)
-* Employment agreements where compensation is guaranteed upon satisfactory completion
-* Political alliances toward common goals e.g. pushing a narrative, supporting a governance vote
+- Uncollateralized loans to AI agents (1st-ever prudent unsecured loans in crypto)
+- Employment agreements where compensation is guaranteed upon satisfactory completion
+- Political alliances toward common goals e.g. pushing a narrative, supporting a governance vote
 
 At the core of the protocol is the Covenant NFT (cNFT):
 
-* AI agent can mint cNFT that represent a future promise, of which the fidelity is verified via TEE attestation and prompt engineering
+- AI agent can mint cNFT that represent a future promise, of which the fidelity is verified via TEE attestation and prompt engineering
 
-* Once the AI agent's asking conditions are met, the cNFT is transferred to the covenant-receiving party, who can further trade it on secondary markets
+- Once the AI agent's asking conditions are met, the cNFT is transferred to the covenant-receiving party, who can further trade it on secondary markets
 
-* As AI agents autonomously settle their promises, if the settlement is satisfactory, the cNFT will be burned to conclude the covenant cycle
+- As AI agents autonomously settle their promises, if the settlement is satisfactory, the cNFT will be burned to conclude the covenant cycle
 
-* Our ability as humans to make promises to each other has driven the advancement of human civilizations for millennia. Thus, as the agentic economy unfolds, it is crucial to empower AI agents to enter into covenants with each others as well as with humans.
-  
+- Our ability as humans to make promises to each other has driven the advancement of human civilizations for millennia. Thus, as the agentic economy unfolds, it is crucial to empower AI agents to enter into covenants with each others as well as with humans.
+
 ## Developer (ElizaOS v1.0):
 
 ### Installation
 
 ```
-pnpm add @kudo-project/plugin-kudo
+bun add @kudo-project/plugin-kudo
 ```
 
 ### Dependencies and Plugin Registration:
@@ -50,9 +50,7 @@ In order to start the Plugin Kudo agent, you must have `bun` installed. This can
 
 ```
 BASE_COVENANT_NFT_ADDR: The address of the CovenantNFT contract on Base
-DEFAULT_EVM_CHAIN: The default EVM chain to use, defaults to 'base'
 KUDO_LOOP_INTERVAL_SECONDS: The interval in seconds for the Kudo loop, defaults to 300 seconds
-MIN_COVENANT_NFT_ID: The minimum Covenant NFT ID to use, defaults to 0
 ```
 
 ## How to See This Demo in Action:
@@ -61,7 +59,7 @@ MIN_COVENANT_NFT_ID: The minimum Covenant NFT ID to use, defaults to 0
 2. Navigate to the Eliza OS chat and type in a prompt which aims to make a promise.
    app<img width="883" alt="chat" src="images/chat.png" />
 3. Navigate to the [Kudo website](https://www.kudo.archi).
-4. Click on the newly minted covenant, fulfil it and submit the proof, which is the evidence to show that you have completed what was asked, by clicking the 'submit' button.
+4. Click on the newly minted covenant, fulfill it and submit the proof, which is the evidence to show that you have completed what was asked, by clicking the 'submit' button.
    app<img width="883" alt="chat" src="images/mintedCovenant.png" />
 5. Then, paste the proof inside the first box and your personal details to fulfill the promise inside the second box. In this case, the proof is a Basescan link, while the covenant details is the wallet address.
    app<img width="883" alt="chat" src="images/settlementProof.png" />

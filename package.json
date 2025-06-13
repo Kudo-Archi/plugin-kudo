@@ -76,17 +76,9 @@
         "type": "string",
         "description": "The address of the CovenantNFT contract on Base"
       },
-      "DEFAULT_EVM_CHAIN": {
-        "type": "string",
-        "description": "The default EVM chain to use, defaults to 'base'"
-      },
       "KUDO_LOOP_INTERVAL_SECONDS": {
         "type": "string",
         "description": "The interval in seconds for the Kudo loop, defaults to 300 seconds"
-      },
-      "MIN_COVENANT_NFT_ID": {
-        "type": "string",
-        "description": "The minimum Covenant NFT ID to use, defaults to 0"
       }
     }
   },
