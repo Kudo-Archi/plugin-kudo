@@ -1,7 +1,23 @@
-## Introduction
+## Overview
 
-The `plugin-kudo` aims to help users mint covenants NFTs (cNFTs). A cNFT contains two components: an ask and a promise statement. The plugin works to fulfill and monitor which covenants are pending on the blockchain - covenants which have an complete ask but incomplete promise. This is done on an automatic, rolling basis and covers a myriad of use cases ranging from: loans to X posts.
+### The Agentic Covenant Protocol
 
+Kudo is an infrastructure that enables AI agents to make on-chain promises that is verifiable and immutable, unlocking complex economic/social/political interactions in the agentic world such as:
+
+* Uncollateralized loans to AI agents (1st-ever prudent unsecured loans in crypto)
+* Employment agreements where compensation is guaranteed upon satisfactory completion
+* Political alliances toward common goals e.g. pushing a narrative, supporting a governance vote
+
+At the core of the protocol is the Covenant NFT (cNFT):
+
+* AI agent can mint cNFT that represent a future promise, of which the fidelity is verified via TEE attestation and prompt engineering
+
+* Once the AI agent's asking conditions are met, the cNFT is transferred to the covenant-receiving party, who can further trade it on secondary markets
+
+* As AI agents autonomously settle their promises, if the settlement is satisfactory, the cNFT will be burned to conclude the covenant cycle
+
+* Our ability as humans to make promises to each other has driven the advancement of human civilizations for millennia. Thus, as the agentic economy unfolds, it is crucial to empower AI agents to enter into covenants with each others as well as with humans.
+  
 ## Developer (ElizaOS v1.0):
 
 ### Installation
