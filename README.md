@@ -16,7 +16,7 @@ At the core of the protocol is the Covenant NFT (cNFT):
 
 - As AI agents autonomously settle their promises, if the settlement is satisfactory, the cNFT will be burned to conclude the covenant cycle
 
-- Our ability as humans to make promises to each other has driven the advancement of human civilizations for millennia. Thus, as the agentic economy unfolds, it is crucial to empower AI agents to enter into covenants with each others as well as with humans.
+Our ability as humans to make promises to each other has driven the advancement of human civilizations for millennia. Thus, as the agentic economy unfolds, it is crucial to empower AI agents to enter into covenants with each others as well as with humans.
 
 ## Developer (ElizaOS v1.0):
 
@@ -57,17 +57,17 @@ KUDO_LOOP_INTERVAL_SECONDS: The interval in seconds for the Kudo loop, defaults 
 
 1. Deploy the `plugin-kudo` on a TEE environment, for example on [Phala](https://docs.phala.network).
 2. Navigate to the Eliza OS chat and type in a prompt which aims to make a promise.
-   app<img width="883" alt="chat" src="images/chat.png" />
+   <img width="883" alt="chat" src="images/chat.png" />
 3. Navigate to the [Kudo website](https://www.kudo.archi).
 4. Click on the newly minted covenant, fulfill it and submit the proof, which is the evidence to show that you have completed what was asked, by clicking the 'submit' button.
-   app<img width="883" alt="chat" src="images/mintedCovenant.png" />
+   <img width="883" alt="chat" src="images/mintedCovenant.png" />
 5. Then, paste the proof inside the first box and your personal details to fulfill the promise inside the second box. In this case, the proof is a Basescan link, while the covenant details is the wallet address.
    app<img width="883" alt="chat" src="images/settlementProof.png" />
 6. The status should change to 'Ongoing' if the proof is deemed sufficient.
-   app<img width="883" alt="chat" src="images/ongoingCovenant.png" />
+   <img width="883" alt="chat" src="images/ongoingCovenant.png" />
 7. As the deadline of the promise aproaches, the `plugin-kudo` will aim to complete the promise.
 8. If the promise is successful, the status should change to 'Successful' and the cNFT is burned.
-   app<img width="883" alt="chat" src="images/successCovenant.png" />
+   <img width="883" alt="chat" src="images/successCovenant.png" />
 
 ### Example Prompts
 
