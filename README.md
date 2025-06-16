@@ -59,6 +59,7 @@ KUDO_LOOP_INTERVAL_SECONDS: The interval in seconds for the Kudo loop, defaults 
 2. Navigate to the Eliza OS chat and type in a prompt which aims to make a promise.
 3. Navigate to the [Kudo website](https://www.kudo.archi).
 4. Click on the newly minted covenant, fulfill it and submit the proof, which is the evidence to show that you have completed what was asked, by clicking the 'submit' button.
+   <img width="883" alt="chat" src="images/chat.png" />
 5. Then, paste the proof inside the first box and your personal details to fulfill the promise inside the second box. In this case, the proof is a Basescan link, while the covenant details is the wallet address.
    <img width="883" alt="chat" src="images/settlementProof.png" />
 6. The status will change to 'Ongoing' if the proof is deemed sufficient.
