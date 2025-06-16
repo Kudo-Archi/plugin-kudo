@@ -61,11 +61,11 @@ KUDO_LOOP_INTERVAL_SECONDS: The interval in seconds for the Kudo loop, defaults 
 3. Navigate to the [Kudo website](https://www.kudo.archi).
 4. Click on the newly minted covenant, fulfill it and submit the proof, which is the evidence to show that you have completed what was asked, by clicking the 'submit' button.
    <img width="883" alt="chat" src="images/mintedCovenant.png" />
-6. Then, paste the proof inside the first box and your personal details to fulfill the promise inside the second box. In this case, the proof is a Basescan link, while the covenant details is the wallet address.
+5. Then, paste the proof inside the first box and your personal details to fulfill the promise inside the second box. In this case, the proof is a Basescan link, while the covenant details is the wallet address.
    <img width="883" alt="chat" src="images/settlementProof.png" />
-7. The status should change to 'Ongoing' if the proof is deemed sufficient.
-8. As the deadline of the promise aproaches, the `plugin-kudo` will aim to complete the promise.
-9. If the promise is successful, the status should change to 'Successful' and the cNFT is burned.
+6. The status should change to 'Ongoing' if the proof is deemed sufficient.
+7. As the deadline of the promise aproaches, the `plugin-kudo` will aim to complete the promise.
+8. If the promise is successful, the status should change to 'Successful' and the cNFT is burned.
    <img width="883" alt="chat" src="images/successCovenant.png" />
 
 ### Example Prompts
