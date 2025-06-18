@@ -194,7 +194,6 @@ export class KudoService extends Service {
         },
       };
 
-      await this.runtime.createMemory(message, "messages");
       const state = await this.runtime.composeState(message);
 
       const prompt = composePromptFromState({
@@ -219,6 +218,8 @@ export class KudoService extends Service {
         content,
       };
 
+      await this.runtime.createMemory(responseMsg, "messages");
+
       try {
         await this.runtime.processActions(
           {
@@ -237,7 +238,7 @@ export class KudoService extends Service {
               {
                 ...message,
                 content: {
-                  text: `NFT_ID: ${covenant.nftId}, SETTLEMENT_DATA: ${response.text}`,
+                  text: `NFT_ID: ${covenant.nftId}, SETTLEMENT_DATA: "${response.text}"`,
                 },
               },
               [
@@ -245,7 +246,7 @@ export class KudoService extends Service {
                   ...message,
                   content: {
                     actions: [setSettlementDataAction.name],
-                    text: `NFT_ID: ${covenant.nftId}, SETTLEMENT_DATA: ${response.text}`,
+                    text: `NFT_ID: ${covenant.nftId}, SETTLEMENT_DATA: "${response.text}"`,
                   },
                 },
               ],

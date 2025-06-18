@@ -19,7 +19,7 @@ export const makeCovenantAction: Action = {
           You should use MAKE_COVENANT whenever you intend to secure, arrange, or guarantee a future action, payment, or obligation, whether personal, financial, promotional, or reputational.
 
           Here are some cases of the Conversation Message of when to use the MAKE_COVENANT action:
-          User: Promise to secure a 10 WETH loan by tomorrow to enhance your trading returns for the next 30 days. (MAKE_COVENANT)
+          User: Secure a 10 WETH loan by tomorrow to enhance your trading returns for the next 30 days. (MAKE_COVENANT)
           User: Commit to paying for your server hosting costing 100,000 USDC due next week. (MAKE_COVENANT)
           User: Pledge to triple your USDC holdings ASAP in order to buy any market dips in the next 3 months. (MAKE_COVENANT)
           User: Sell an advertisement slot for next week where you promote a project on X. (MAKE_COVENANT)
