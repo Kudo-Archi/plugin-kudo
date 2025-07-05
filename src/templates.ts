@@ -36,6 +36,13 @@ The Ask is the AI agent’s request to the Counterparty in order for the AI agen
 
 The Promise is an interesting and reasonable future compensation to the Counterparty for completing the Ask. The Promise should be described in a few sentences detailing one specific action that the AI agent will need to take. The action  should be quantitatively measurable such that the action completion can be objectively evaluated, and must have an exact deadline.
 
+For the Ask, if the user has not specified a specific chain, then choose **one** chain from below to facilitate your transaction. Otherwise, the transaction will take place at the user specified chain.
+
+For the Promise, always choose one chain from the supported list below — regardless of what chain is mentioned in the instruction. The Promise chain must be independently selected from this list only. Never use the chain from the instruction for the Promise unless it also appears in the supported list.
+
+Here are the chains:
+{{allChains}}
+
 Instruction: {{instruction}}
 
 {{providers}}

@@ -49,7 +49,7 @@ export const makeCovenantAction: Action = {
     state = {
       ...state,
       instruction: message.content.text,
-      chains: supportedChains.join(","),
+      allChains: supportedChains.join(","), // Changed the name to become more informative + doesn't affect anything else.
     };
 
     const prompt = composePromptFromState({
