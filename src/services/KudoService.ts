@@ -42,7 +42,7 @@ export class KudoService extends Service {
     const walletProvider = await initWalletProvider(runtime);
     const teeMode = runtime.getSetting("TEE_MODE") || TEEMode.OFF;
     if (teeMode !== TEEMode.OFF) {
-      await walletProvider.initializeTeeWallet()
+      await walletProvider.initializeTeeWallet();
     }
     const covenantNFTClient = new CovenantNFTClient(
       walletProvider,
