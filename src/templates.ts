@@ -54,8 +54,8 @@ Response format should be formatted in a JSON block like this:
 
 
 Where:
-“ask”: The description of the Ask.
-“promise”: The description of the Promise.
+“ask”: The description of the Ask. **Always add your EVM wallet address if mentioned and there are any transactions. Include timestamps**
+“promise”: The description of the Promise. **Include timestamps here**
 "type": A one word description to categorize the instruction, output in capital letters.
 
 **Out put the JSON File only**
