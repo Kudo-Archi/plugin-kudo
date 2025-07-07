@@ -13,6 +13,7 @@ import {
   logger,
   ChannelType,
   Room,
+  TEEMode,
 } from "@elizaos/core";
 import { initWalletProvider } from "@elizaos/plugin-evm";
 import { extractActionTemplate } from "../templates";
@@ -39,6 +40,10 @@ export class KudoService extends Service {
     logger.info("Starting Kudo Service");
 
     const walletProvider = await initWalletProvider(runtime);
+    const teeMode = runtime.getSetting("TEE_MODE") || TEEMode.OFF;
+    if (teeMode !== TEEMode.OFF) {
+      await walletProvider.initializeTeeWallet()
+    }
     const covenantNFTClient = new CovenantNFTClient(
       walletProvider,
       runtime.character.settings?.chains?.evm[0] || "base",
