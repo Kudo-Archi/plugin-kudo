@@ -35,7 +35,13 @@ export const makeCovenantAction: Action = {
   validate: async () => {
     return true;
   },
-  handler: async (runtime: IAgentRuntime, message: Memory, state: State, _, callback: HandlerCallback) => {
+  handler: async (
+    runtime: IAgentRuntime,
+    message: Memory,
+    state: State,
+    _,
+    callback: HandlerCallback,
+  ) => {
     logger.info("makeCovenantAction handler called");
     if (!runtime.character.settings.chains.evm.length) {
       throw new Error("No Available Chains");
