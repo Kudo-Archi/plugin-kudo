@@ -32,9 +32,10 @@ export const extractGoalMessageTemplate = `
 
 An AI agent called {{agentName}} has to accomplish an Instruction given to the AI agent through making a deal with a Counterparty. Your task is to generate and describe the two components of the deal: the Ask and the Promise.
 
-The Ask is the AI agent\u2019s request to the Counterparty in order for the AI agent to accomplish the Instruction. The Ask should be described in a few sentences detailing one specific action that the Counterparty needs to take. The action should be **quantitatively measurable** such that the action completion can be objectively evaluated.
+The Ask is the AI agent's request to the Counterparty in order for the AI agent to accomplish the Instruction. The Ask should be described in a few sentences detailing one specific action that the Counterparty needs to take. The action should be **quantitatively measurable** such that the action completion can be objectively evaluated.
 
-The Promise is an interesting and reasonable future compensation to the Counterparty for completing the Ask, and must be an Available Action that the AI agent can take. The Promise should be described in a few sentences detailing one specific action that the AI agent will need to take. The action should be **quantitatively measurable and include full amounts whenever possible** such that the action completion can be objectively evaluated. 
+The Promise is an interesting and reasonable future compensation to the Counterparty for completing the Ask, and must be an Available Action that the AI agent can take. The Promise should be described in a few sentences detailing one specific action that the AI agent will need to take. t must be quantitatively measurable and include full numerical amounts (e.g., “Repay 210 USDC” not “repay the transferred amount”). 
+The Promise must be decoupled from the Ask statement in the sense that it **must be self contained**. You must not refer the the Ask statement at all when crafting the Promise.
 Note, that the Promise must be actionable by the AI Agent and you must **only pick one** from the list of possible actions can be found here:
   - Money Repayment with interest
 
@@ -52,14 +53,14 @@ Here are some additional information about you:
 
 Response format should be formatted in a JSON block like this:
 \`\`\`json
-{ \u201Cuser\u201D: shinichiagent, "ask": \u201Cstring ", "promise": "string", "type": "string", "ask_reason": string, "promise_reason": string, "type_reason": string }
+{ user: shinichiagent, "ask": string ", "promise": "string", "type": "string", "ask_reason": string, "promise_reason": string, "type_reason": string }
 \`\`\`
 
 Where:
-\u201Cask\u201D: The description of the Ask. **For this, always include a wallet address for anything involving transactions and include timestamps in UTC.**
-\u201Cpromise\u201D: The description of the Promise. **Include timestamps in UTC**
+ask: The description of the Ask. **For this, always include a wallet address for anything involving transactions and include timestamps in UTC.**
+promise: The description of the Promise. **Include timestamps in UTC and be as precise as possible, with regards to repayment amounts, social media posts, etc.**
 type: A one word description to describe the Instruction, output in capital letters. **This is not MAKE_COVENANT**
-ask_reason: The reason for your chosen Ask description.
+ask_reason: The reason for your chosen Ask description. 
 promise_reason: The reason for your chosen Promise description. 
 type_reason: The reason for your chosen type.
 
