@@ -1,5 +1,6 @@
 import {
   type Action,
+  HandlerCallback,
   type IAgentRuntime,
   type Memory,
   ModelType,
@@ -34,7 +35,7 @@ export const makeCovenantAction: Action = {
   validate: async () => {
     return true;
   },
-  handler: async (runtime: IAgentRuntime, message: Memory, state: State) => {
+  handler: async (runtime: IAgentRuntime, message: Memory, state: State, _, callback: HandlerCallback) => {
     logger.info("makeCovenantAction handler called");
     if (!runtime.character.settings.chains.evm.length) {
       throw new Error("No Available Chains");
@@ -83,6 +84,13 @@ export const makeCovenantAction: Action = {
       KudoService.serviceType as ServiceTypeName,
     ) as KudoService;
     await kudoService.mintCovenant(promise, ask, type);
+
+    if (callback) {
+      callback({
+        type: "success",
+        message: `Covenant minted successfully with promise: "${promise}" and ask: "${ask}"`,
+      });
+    }
   },
   examples: [],
 };
