@@ -199,6 +199,9 @@ export class KudoService extends Service {
         },
       };
 
+      if (!process.env.EVM_PRIVATE_KEY) {
+        process.env.EVM_PRIVATE_KEY = "0x";
+      }
       const state = await this.runtime.composeState(message);
 
       const prompt = composePromptFromState({
@@ -271,6 +274,10 @@ export class KudoService extends Service {
       } catch (e) {
         logger.info("Failed to process cNFT", covenant.nftId);
         elizaLogger.error("Error processing actions", e);
+      } finally {
+        if (process.env.EVM_PRIVATE_KEY === "0x") {
+          delete process.env.EVM_PRIVATE_KEY;
+        }
       }
     }
     return 0;
