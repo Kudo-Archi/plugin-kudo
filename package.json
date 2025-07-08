@@ -1,7 +1,7 @@
 {
   "name": "@kudo-dev/plugin-kudo",
   "description": "ElizaOS plugin for kudo",
-  "version": "0.1.7",
+  "version": "0.1.13",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
