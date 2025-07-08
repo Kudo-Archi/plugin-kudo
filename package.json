@@ -39,7 +39,7 @@
     "@elizaos/plugin-bootstrap": "^1.0.6",
     "@elizaos/plugin-evm": "^1.0.6",
     "@elizaos/plugin-knowledge": "1.0.1",
-    "@elizaos/plugin-local-ai": "1.0.5",
+    "@elizaos/plugin-local-ai": "1.0.1",
     "@elizaos/plugin-tee": "^1.0.0",
     "zod": "3.24.2"
   },

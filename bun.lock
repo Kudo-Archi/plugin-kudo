@@ -8,7 +8,7 @@
         "@elizaos/plugin-bootstrap": "^1.0.6",
         "@elizaos/plugin-evm": "^1.0.6",
         "@elizaos/plugin-knowledge": "1.0.1",
-        "@elizaos/plugin-local-ai": "1.0.5",
+        "@elizaos/plugin-local-ai": "1.0.1",
         "@elizaos/plugin-tee": "^1.0.0",
         "zod": "3.24.2",
       },
@@ -70,7 +70,7 @@
 
     "@elizaos/plugin-knowledge": ["@elizaos/plugin-knowledge@1.0.1", "", { "dependencies": { "@ai-sdk/anthropic": "^1.2.11", "@ai-sdk/google": "^1.2.18", "@ai-sdk/openai": "^1.3.22", "@elizaos/core": "^1.0.0", "@elizaos/plugin-sql": "^1.0.0-beta", "@openrouter/ai-sdk-provider": "^0.4.5", "@tanstack/react-query": "^5.51.1", "@vitejs/plugin-react-swc": "^3.10.0", "ai": "^4.3.15", "clsx": "^2.1.1", "dotenv": "^16.5.0", "esbuild-plugin-copy": "^2.1.1", "lucide-react": "^0.408.0", "mammoth": "^1.9.0", "pdfjs-dist": "^5.2.133", "react": "^18.3.1", "react-dom": "^18.3.1", "react-force-graph-2d": "^1.27.1", "react-router-dom": "^7.1.1", "tailwind-merge": "^2.4.0", "textract": "^2.5.0", "zod": "3.25.23" } }, "sha512-4Y7w+sU53WQLii1QIFNRuKUL9OjQlbilrfqoiG8b+XgKsjXMQELd/dOU3svSAAEKtMVbf7MeKgNSn3ozKY5tOg=="],
 
-    "@elizaos/plugin-local-ai": ["@elizaos/plugin-local-ai@1.0.5", "", { "dependencies": { "@elizaos/core": "^1.0.0", "@huggingface/transformers": "^3.5.1", "node-llama-cpp": "3.8.1", "nodejs-whisper": "0.2.9", "stream-browserify": "^3.0.0", "tsup": "8.5.0", "undici": "^7.10.0", "uuid": "11.1.0", "whisper-node": "^1.1.1", "zod": "3.25.23" } }, "sha512-BV23KlZ7rJY+Kr/cCiJ20Hm2LsOiJj4ye5ztvH7U2erBsDUTwVMhEkrPoOweuDYFVbK85WGNjQJPVOp8FBDAZw=="],
+    "@elizaos/plugin-local-ai": ["@elizaos/plugin-local-ai@1.0.1", "", { "dependencies": { "@elizaos/core": "^1.0.0", "@huggingface/transformers": "^3.5.1", "node-llama-cpp": "3.8.1", "nodejs-whisper": "0.2.9", "stream-browserify": "^3.0.0", "tsup": "8.5.0", "undici": "^7.10.0", "uuid": "11.1.0", "whisper-node": "^1.1.1", "zod": "3.25.23" } }, "sha512-9l1dOtfs5ni3tbeA5pOzA1hCefZ9QvB4NVwAL2T6zQAmQN3Ga/5GgWDzE1ErcyH/ijrijewHD/lfoMjDnQ3IDQ=="],
 
     "@elizaos/plugin-openai": ["@elizaos/plugin-openai@1.0.4", "", { "dependencies": { "@ai-sdk/openai": "^1.3.20", "@elizaos/core": "^1.0.0", "ai": "^4.3.16", "js-tiktoken": "^1.0.18", "tsup": "8.5.0", "undici": "^7.10.0" } }, "sha512-hp+mQG0DxkyG/GZVR7KxTjiNMM0fB1WrlCcyQ2/fVhuqlf3PUWw7dlMiz8prj0JVksKiL90yeTC7+44mNMxXog=="],
 
