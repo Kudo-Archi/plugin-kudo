@@ -9,7 +9,8 @@ Promise Statement: {{promise}}
 
 Promise Details: {{promiseDetails}}
 
-Having known the promise, you are to advise the AI agent to pick **a list of actions**. The actions are to be chosen only from the following list of available actions. Additionally, you need to generate a Description containing specific details of the action such that the agent knows how to exactly perform the action to fulfil the exact promise.
+Having known the promise, you are to advise the AI agent to pick **a list of actions**. The actions are to be chosen only from the following list of available actions. Additionally, you need to generate a Description containing specific details of the action such that the agent knows how to exactly perform the action to fulfil the exact promise. 
+**When you chose the action, please refrain from choosing chat specific actions such as REPLY or MUTE**.
 
 {{actions}}
 
@@ -23,7 +24,7 @@ Response format should be formatted in a JSON block like this:
 Where:
 1) text: The Description containing specific details of the action.
 2) actions: If the AI agent were to do nothing, output an empty array, otherwise output the chosen list of actions. Output this as a list of strings, which contains your recommended action(s). 
-3) "reason":  A reason for the chosen action
+3) reason:  A reason for the chosen action
 
 **Out put the JSON File only**`;
 
