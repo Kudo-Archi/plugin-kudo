@@ -205,11 +205,15 @@ export class KudoService extends Service {
         template: extractActionTemplate,
       });
 
+      elizaLogger.info(`Prompt 3: ${prompt}`)
+
       const llmResponse = await this.runtime.useModel(ModelType.TEXT_LARGE, {
         prompt,
       });
 
       const content = parseJSONObjectFromText(llmResponse) as Content;
+
+      elizaLogger.info(`Prompt 3 Results: ${content}`)
 
       const responseMsg: Memory = {
         entityId: message.entityId,
